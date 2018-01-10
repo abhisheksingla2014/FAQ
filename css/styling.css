@@ -1,0 +1,414 @@
+@media screen and (min-width: 741px) {
+	*{
+		box-sizing: border-box;
+		margin:0px;
+	}
+	#cover{
+		width: 100%;
+		height: 310px;
+		background-image: url("../images/cover.jpg");
+		background-size: cover;
+		text-align: center;
+		position:relative;
+	}
+	#cover-heading{
+		width:100%;
+		font-size: 80px;
+		color: white;
+		position: absolute;
+		top: 35%; 	
+	}
+	#navbar{
+		width: 100%;
+		background-color: blue;	
+		height:35px;
+		position: relative;
+		text-align: center;
+	}
+	#nav-bar{
+		height:100%;
+		background-color: white;
+		float: center;
+		float: none;
+	}
+	.navbarElement{
+		height: 100%;
+		padding: 8px 10px 5px 10px;
+		float: none;
+		display: inline-block;
+		position: relative;
+	}
+	.list-items{
+		height: 100%;
+		/*position: absolute;*/
+		/*top: 20%;*/
+		color: black;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		font-size: 16px;
+	}
+	.same-page-links{
+		text-decoration: none;
+	}
+	.list-items:hover{
+		color:orange;
+		text-decoration: underline;
+	}
+	.content-class{
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		background-color: #f9f9f9;
+	}
+	.faq-heading{
+		font-size: 42px;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		color: orange;
+	}
+	.content-sub-heading{
+		font-size: 22px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+	}
+	.content-links{
+		font-size: 14px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		color:black;	
+	}
+	.content-links:hover{
+		color:orange;
+	}
+	.questions{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		list-style: none;
+	}
+	 .questions:before {
+	      content:'\2022';
+	      display: block;
+	      position: relative;
+	      max-width: 0px;
+	      max-height: 0px;
+	      left: -20px;
+	      top: 4px;
+	      color: orange;
+	      font-size: 20px;
+	}
+}
+
+				/*526 to 740*/
+@media screen and (max-width: 740px) and (min-width: 526px) {
+	*{
+		box-sizing: border-box;
+		margin: 0px;
+	}
+	#cover{
+		width: 100%;
+		height: 220px;
+		background-image: url("../images/cover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		position:relative;
+		display: flex;
+	}
+	#cover-heading{
+		width:100%;
+		font-size: 60px;
+		color: white;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;	
+	}
+	#navbar{
+		width: 100%;
+		background-color: blue;	
+		height:35px;
+		position: relative;
+		text-align: center;
+	}
+	#nav-bar{
+		height:100%;
+		background-color: white;
+		float: center;
+		float: none;
+	}
+	.navbarElement{
+		height: 100%;
+		padding: 8px 10px 5px 10px;
+		float: none;
+		display: inline-block;
+		position: relative;
+	}
+	.list-items{
+		height: 100%;
+		/*position: absolute;*/
+		/*top: 20%;*/
+		color: black;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		font-size: 16px;
+	}
+	.same-page-links{
+		text-decoration: none;
+	}
+	.list-items:hover{
+		color:orange;
+		text-decoration: underline;
+	}
+	.content-class{
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		background-color: #f9f9f9;
+	}
+	.faq-heading{
+		font-size: 42px;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		color: orange;
+	}
+	.content-sub-heading{
+		font-size: 22px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+	}
+	.content-links{
+		font-size: 14px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		color:black;	
+	}
+	.content-links:hover{
+		color:orange;
+	}
+	.questions{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		list-style: none;
+	}
+	 .questions:before {
+	      content:'\2022';
+	      display: block;
+	      position: relative;
+	      max-width: 0px;
+	      max-height: 0px;
+	      left: -20px;
+	      top: 4px;
+	      color: orange;
+	      font-size: 20px;
+	}
+}
+
+				/*361 to 525*/
+@media screen and (max-width: 525px) and (min-width: 361px) {
+	*{
+		box-sizing: border-box;
+		margin: 0px;
+	}
+	#cover{
+		width: 100%;
+		height: 150px;
+		background-image: url("../images/cover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		position:relative;
+		display: flex;
+	}
+	#cover-heading{
+		width:100%;
+		font-size: 45px;
+		color: white;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;	
+	}
+	#navbar{
+		width: 100%;
+		background-color: blue;	
+		height:35px;
+		position: relative;
+		text-align: center;
+	}
+	#nav-bar{
+		height:100%;
+		background-color: white;
+		float: center;
+		float: none;
+	}
+	.navbarElement{
+		height: 100%;
+		padding: 8px 10px 5px 10px;
+		float: none;
+		display: inline-block;
+		position: relative;
+	}
+	.list-items{
+		height: 100%;
+		/*position: absolute;*/
+		/*top: 20%;*/
+		color: black;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		font-size: 16px;
+	}
+	.same-page-links{
+		text-decoration: none;
+	}
+	.list-items:hover{
+		color:orange;
+		text-decoration: underline;
+	}
+	.content-class{
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		background-color: #f9f9f9;
+	}
+	.faq-heading{
+		font-size: 42px;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		color: orange;
+	}
+	.content-sub-heading{
+		font-size: 22px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+	}
+	.content-links{
+		font-size: 14px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		color:black;	
+	}
+	.content-links:hover{
+		color:orange;
+	}
+	.questions{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		list-style: none;
+	}
+	 .questions:before {
+	      content:'\2022';
+	      display: block;
+	      position: relative;
+	      max-width: 0px;
+	      max-height: 0px;
+	      left: -20px;
+	      top: 4px;
+	      color: orange;
+	      font-size: 20px;
+	}
+}
+
+			/*0 to 360*/
+@media screen and (max-width: 360px) {
+	*{
+		box-sizing: border-box;
+		margin: 0px;
+	}
+	#cover{
+		width: 100%;
+		height: 100px;
+		background-image: url("../images/cover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		position:relative;
+		display: flex;
+	}
+	#cover-heading{
+		width:100%;
+		font-size: 40px;
+		color: white;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		justify-content: center;	
+	}
+	#navbar{
+		width: 100%;
+		background-color: blue;	
+		height:140px;
+		position: relative;
+		text-align: center;
+	}
+	#nav-bar{
+		height:100%;
+		background-color: white;
+		float: center;
+		float: none;
+	}
+	.navbarElement{
+		height: 25%;
+		padding: 8px 10px 5px 10px;
+		float: none;
+		display: block;
+		position: relative;
+	}
+	.list-items{
+		height: 100%;
+		/*position: absolute;*/
+		/*top: 20%;*/
+		color: black;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		font-size: 16px;
+	}
+	.same-page-links{
+		text-decoration: none;
+	}
+	.list-items:hover{
+		color:orange;
+		text-decoration: underline;
+	}
+	.content-class{
+		width: 100%;
+		padding-left: 10%;
+		padding-right: 10%;
+		background-color: #f9f9f9;
+	}
+	.faq-heading{
+		font-size: 42px;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		color: orange;
+	}
+	.content-sub-heading{
+		font-size: 22px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+	}
+	.content-links{
+		font-size: 14px;
+		font-weight: 400;
+		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
+		color:black;	
+	}
+	.content-links:hover{
+		color:orange;
+	}
+	.questions{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		list-style: none;
+	}
+	 .questions:before {
+	      content:'\2022';
+	      display: block;
+	      position: relative;
+	      max-width: 0px;
+	      max-height: 0px;
+	      left: -20px;
+	      top: 4px;
+	      color: orange;
+	      font-size: 20px;
+	}
+}
