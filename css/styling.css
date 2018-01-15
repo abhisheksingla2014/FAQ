@@ -1,8 +1,8 @@
-@media screen and (min-width: 741px) {
+@media screen and (min-width: 741px) {     
 	*{
 		box-sizing: border-box;
 		margin:0px;
-	}
+	}     
 	#cover{
 		width: 100%;
 		height: 310px;
@@ -10,20 +10,54 @@
 		background-size: cover;
 		text-align: center;
 		position:relative;
-	}
+		opacity: 1;
+	}     
 	#cover-heading{
 		width:100%;
 		font-size: 80px;
 		color: white;
 		position: absolute;
-		top: 35%; 	
+		top: 35%;
+	}
+	#horizontal-bar{
+		height:35px;
+		width: 100%;
+		display: inline-block;
+		background-color: white; 
+	}
+	#login-div{
+		width:15%;
+		background-color: white;
+		display:inline-block;
+		height: 100%;
+	}
+	#login-button{
+		height:100%;
+		width: 70%;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	/*padding: 15px 32px;*/
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	/*margin: 4px 2px;*/
+    	cursor: pointer;
+    	outline:0;
+	}
+	#login-button:hover{
+		background-color: #f9f9f9;
+		color: orange;
 	}
 	#navbar{
-		width: 100%;
+		width: 80%;
 		background-color: blue;	
 		height:35px;
 		position: relative;
 		text-align: center;
+		float: left;	
+		display: inline-block;
 	}
 	#nav-bar{
 		height:100%;
@@ -58,12 +92,13 @@
 		padding-left: 10%;
 		padding-right: 10%;
 		background-color: #f9f9f9;
+		opacity: 1;
 	}
 	.faq-heading{
 		font-size: 42px;
 		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
-		margin-bottom: 30px;
-		margin-top: 10px;
+		padding-bottom: 30px;
+		padding-top: 10px;
 		color: orange;
 	}
 	.content-sub-heading{
@@ -85,16 +120,104 @@
 		margin-bottom: 10px;
 		list-style: none;
 	}
-	 .questions:before {
+	.questions:before {
 	      content:'\2022';
 	      display: block;
 	      position: relative;
 	      max-width: 0px;
 	      max-height: 0px;
 	      left: -20px;
-	      top: 4px;
+	      top: -2px;
 	      color: orange;
 	      font-size: 20px;
+	}
+	#login-page{
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 200;
+		top: 0;
+		left: 0;
+		display: none;
+		/*opacity: 0.4;
+		background-color: black;*/
+	}
+	#login-panel{
+		height: 100%;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		background-color: white;
+		opacity: 1;
+		position: relative;
+
+	}
+	#button-div{
+		height: 50px;	 
+	}
+	#close-button{
+		background-color: white;
+		border: 0;
+		outline: 0;
+		font-weight: bold;
+		height: 20px;
+		width: 40px;	
+		float: right;	
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	#form-div{
+		position: relative;
+		height: 90%;
+		width: 100%;
+		/*margin-top: 50px;*/
+		/*padding: 10%;*/
+		padding: 8%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+	#login-heading{
+		font-size: 45;
+  		color: orange;
+  		font-family:  Arial, Helvetica, sans-serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 50px;
+  		display: block;
+	}
+	.names{
+		font-size: 25;
+  		color: #525252;
+  		font-family:  Georgia, serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 10px;
+  		display: block;
+	}
+	.name-box{
+		width: 250px;
+		height: 30px;
+		display: block;
+		border-radius: 5px;
+		display: block;
+		outline: 0;
+	}
+	#submit-button{
+		height: 40;
+		width: 150;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	cursor: pointer;
+    	outline:0;
+		border-radius: 5px;
+		margin-top: 30px;
 	}
 }
 
@@ -123,12 +246,44 @@
 		text-align: center;
 		justify-content: center;	
 	}
-	#navbar{
+	#horizontal-bar{
+		height:35px;
 		width: 100%;
+		display: inline-block;
+	}
+	#login-div{
+		width:15%;
+		/*background-color: green;*/
+		display:inline-block;
+		height: 100%;
+	}
+	#login-button{
+		height:100%;
+		width: 70%;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	/*padding: 15px 32px;*/
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	/*margin: 4px 2px;*/
+    	cursor: pointer;
+    	outline:0;
+	}
+	#login-button:hover{
+		background-color: #f9f9f9;
+		color: orange;
+	}
+	#navbar{
+		width: 80%;
 		background-color: blue;	
 		height:35px;
 		position: relative;
 		text-align: center;
+		float: left;
+		display: inline-block;
 	}
 	#nav-bar{
 		height:100%;
@@ -228,10 +383,41 @@
 		text-align: center;
 		justify-content: center;	
 	}
+	#horizontal-bar{
+		height:70px;
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+	}
+	#login-div{
+		width:30%;
+		/*background-color: green;*/
+		display:inline-block;
+		height: 50%;
+		}
+	#login-button{
+		height:100%;
+		width: 70%;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	/*padding: 15px 32px;*/
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	/*margin: 4px 2px;*/
+    	cursor: pointer;
+    	outline:0;
+	}
+	#login-button:hover{
+		background-color: #f9f9f9;
+		color: orange;
+	}
 	#navbar{
 		width: 100%;
-		background-color: blue;	
-		height:35px;
+		/*background-color: blue;	*/
+		height:50%;
 		position: relative;
 		text-align: center;
 	}
@@ -333,21 +519,54 @@
 		text-align: center;
 		justify-content: center;	
 	}
+	#horizontal-bar{
+		/*height:175px;*/
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		/*padding-left: -20%;*/
+	}
+	#login-div{
+		width: 100%;
+		/*background-color: green;*/
+		display:block;
+		height: 35px;
+		text-align: center;
+		}
+	#login-button{
+		height:100%;
+		width: 60%;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	/*padding: 15px 32px;*/
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	/*margin: 4px 2px;*/
+    	cursor: pointer;
+    	outline:0;
+	}
+	#login-button:hover{
+		background-color: #f9f9f9;
+		color: orange;
+	}
 	#navbar{
 		width: 100%;
-		background-color: blue;	
+		/*background-color: blue;	*/
 		height:140px;
 		position: relative;
 		text-align: center;
+		margin-left: -10%;
 	}
 	#nav-bar{
 		height:100%;
 		background-color: white;
-		float: center;
 		float: none;
 	}
 	.navbarElement{
-		height: 25%;
+		height: 35px;
 		padding: 8px 10px 5px 10px;
 		float: none;
 		display: block;
@@ -377,8 +596,8 @@
 	.faq-heading{
 		font-size: 42px;
 		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
-		margin-bottom: 30px;
-		margin-top: 10px;
+		padding-bottom: 30px;
+		padding-top: 10px;
 		color: orange;
 	}
 	.content-sub-heading{

@@ -3,180 +3,118 @@
 		<meta charset="utf-8"></meta>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 		<link href="./css/styling.css" rel="stylesheet" type="text/css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<div id = "cover" >
+		<div id = "cover">
 			<div id = "cover-heading">FAQ			
 			</div>
 		</div>
-		<nav id = "navbar">
-			<ul id = "nav-bar">
-				<li class = "navbarElement">
-					<a href="#H1" class = "same-page-links">
-                		<span class="list-items">ABOUT</span>
-              		</a>
-				</li>
-				<li class = "navbarElement">
-					<a href="#H2" class = "same-page-links">
-                		<span class="list-items">SELLER</span>
-              		</a>
-				</li>
-				<li class = "navbarElement">
-					<a href="#H3" class = "same-page-links">
-                		<span class="list-items">BUYER</span>
-              		</a>
-				</li>
-				<li class = "navbarElement">
-					<a href="#H4" class = "same-page-links">
-                		<span class="list-items">NRI</span>
-              		</a>
-				</li>
-			</ul>
-		</nav>
-		<div class = "content-class">
+		<div id = "horizontal-bar">
+			<nav id = "navbar">
+				<ul id = "nav-bar">
+					<li class = "navbarElement">
+						<a href="#H1" class = "same-page-links">
+	                		<span class="list-items">ABOUT</span>
+	              		</a>
+					</li>
+					<li class = "navbarElement">
+						<a href="#H2" class = "same-page-links">
+	                		<span class="list-items">SELLER</span>
+	              		</a>
+					</li>
+					<li class = "navbarElement">
+						<a href="#H3" class = "same-page-links">
+	                		<span class="list-items">BUYER</span>
+	              		</a>
+					</li>
+					<li class = "navbarElement">
+						<a href="#H4" class = "same-page-links">
+	                		<span class="list-items">NRI</span>
+	              		</a>
+					</li>
+				</ul>
+			</nav>
+			<div id = "login-div">
+				<button type = "button" id="login-button" onclick="login()">LOGIN</button>
+			</div>
+		</div>
+
+		<!-- logn panel start-->
+		<div id = "login-page">
+			<div id = "login-panel">
+				<div id = "button-div"><button type = "button" id="close-button" onclick = "close_button()" onmouseover = "mouse()">X</button></div>
+				<div id = "form-div">
+					<form action="" method="get">
+						<span id = "login-heading" >LOGIN</span>
+  						<span class = "names">First name</span>
+  						<input type="text" name="fname" class = "name-box"><br>
+  						<span class = "names">Last name</span> 
+  						<input type="text" name="lname" class = "name-box"><br>
+  						<input type="submit" value="Submit" id = "submit-button">
+						</form>
+				</div>		
+			</div>
+		</div>	
+		<!-- logn panel end-->
+
+		<div class = "content-class" id = "content-class">
 			<div class = "faq-heading">
 				<span id = "faq">FAQ</span>
 			</div>
 			<div class = "content-sub-heading">
 				<span class = "faq" id = "H1">About Proptiger </span>
-					<ul>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-					</ul>
+					<ul id ="ul1"></ul>
 					<br>
 					<span class = "faq" id = "H2">Seller Corner </span>
-					<ul>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									 Who needs to pay the stamp duty? The seller or the buyer?
-
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									 Who needs to pay the stamp duty? The seller or the buyer?
-
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									 Who needs to pay the stamp duty? The seller or the buyer?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Who needs to pay the stamp duty? The seller or the buyer? 
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Who needs to pay the stamp duty? The seller or the buyer? 
-								</span></a>
-						</li>
-					</ul>
+					<ul id = "ul2"></ul>
 					<br>
 					<span class = "faq" id = "H3">Buyers Corner </span>
-					<ul>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-					</ul>
+					<ul id = "ul3"></ul>
 					<br>
 					<span class = "faq" id = "H4">NRI Services </span>
-					<ul>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-						<li class = "questions">
-							<a href="https://www.proptiger.com/guide/real-estate-faqs/about-proptiger#q2-why-should-i-choose-proptiger-com" itemprop="url" style = "text-decoration: none;">
-								<span class="content-links">
-									Why should I choose proptiger.com?
-								</span></a>
-						</li>
-					</ul>
+					<ul id = "ul4"></ul>
 			</div>
 		</div>
-
+		<script>
+			function login() {
+				// console.log(1);
+    			// document.getElementById("login-page").style.zIndex = "200";
+    			// document.getElementById("login-page").style.opacity = "0.1";
+    			document.getElementById("login-page").style.display = "inline";
+    			document.getElementById("cover").style.opacity = "0.3";
+    			document.getElementById("content-class").style.opacity = "0.3";
+    			document.getElementById("horizontal-bar").style.opacity = "0.3";
+    		}
+			function close_button(){
+				console.log("clicked");
+    			document.getElementById("content-class").style.opacity = "1";
+    			document.getElementById("cover").style.opacity = "1";	
+				document.getElementById("login-page").style.display = "none";
+				document.getElementById("horizontal-bar").style.opacity = "1";
+			}
+			function mouse(){
+				console.log("hover");
+			}
+			var xhttp = new XMLHttpRequest();
+      		xhttp.onreadystatechange = function() {
+	          	if (this.readyState == 4 && this.status == 200) {
+	            	console.log(xhttp.responseText);
+	            	var response = JSON.parse(xhttp.responseText);
+	            	var questions = response.questions;
+		            for(let j = 0;j < questions.length;j++){
+		            	let output = '';		
+		            	for(var i = j;i < questions[j].length;i++){
+		              		output += "<li class = 'questions'><span class='content-links'>" + questions[j][i]+ "</span></li>";
+		            	}
+		            	let elementid = 'ul'+(j+1).toString();
+		            	console.log(elementid);
+		            	document.getElementById(elementid).innerHTML = output;
+		            }	
+	          	}
+      		};
+  			xhttp.open("GET", "./data/questions.json", true);
+			xhttp.send();
+		</script>
 	</body>
 </html>		
