@@ -71,6 +71,7 @@
 		float: none;
 		display: inline-block;
 		position: relative;
+		background-color: white;
 	}
 	.list-items{
 		height: 100%;
@@ -84,8 +85,8 @@
 		text-decoration: none;
 	}
 	.list-items:hover{
-		color:orange;
-		text-decoration: underline;
+		/*color:orange;*/
+		/*text-decoration: underline;*/
 	}
 	.content-class{
 		width: 100%;
@@ -218,6 +219,84 @@
     	outline:0;
 		border-radius: 5px;
 		margin-top: 30px;
+	}
+	#subscribe-button{
+		position: absolute;
+		right: 100%;
+		top: 0;
+		height: 30px;
+		width: 30px;
+		border: 0;
+		outline: 0;
+		background-color: black;
+		color: white;
+	}
+	.subscribe-div{
+		position: fixed;
+		height: 300px;
+		width: 270px;
+		top: 50%;
+		left:100%;
+		background-color: white;
+	}
+	.subscribe-div-click{
+		position: fixed;
+		height: 300px;
+		width: 260px;
+		top: 50%;
+		left:80%;
+		background-color: white;
+	}
+	#subscribe-panel{
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	#subscribe-heading{
+		font-size: 20px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	#subscribe-form{
+		margin-left: 5%;
+		margin-right: 5%;
+		display: block;
+	}
+	#subscribe-input{
+		border: 0;
+   		border-radius: 0;
+    	padding-left: 0;
+    	border-bottom: 1px #e2e3e6 solid;
+    	font-size: 15px;
+    	margin-bottom: 5px;
+    	box-shadow: none;
+    	display: block;
+    	width: 90%;
+    	height: 34px;
+    	padding: 6px 12px;
+        color: #555;
+    	background-color: #fff;
+    	outline: 0;
+	}
+	#subscribe-submit{
+		display: block;
+		background: #ff992b;
+    	color: #fff;
+    	text-shadow: 1px 1px 1px #c96800;
+    	border: 0;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	cursor: pointer;
+    	transition-property: background;
+    	transition-duration: .3s;
+    	width: 80%;
+    	margin-top: 20px;
+    	height: 40px;
+    	font-size: 20;
+    	border-radius: 10px;
+    	margin-left: 10px;
 	}
 }
 
