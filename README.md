@@ -1,8 +1,8 @@
 # Installation
 
 Install node using commands
-  -sudo apt-get update
-  -sudo apt-get install nodejs
+  - sudo apt-get update
+  - sudo apt-get install nodejs
 
 ---
 
