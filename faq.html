@@ -3,7 +3,6 @@
 		<meta charset="utf-8"></meta>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 		<link href="./css/styling.css" rel="stylesheet" type="text/css"></link>
-		<script src = "./js/questions-collector.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -108,17 +107,18 @@
 				</div>
 			</div>
 		<!-- subscribe end -->
+		<script src = "./js/questions-collector.js"></script>
 		<script>
-			function login() {
+			function login(){
     			document.getElementById("login-page").style.display = "inline";
     			document.getElementById("cover").style.opacity = "0.3";
     			document.getElementById("content-class").style.opacity = "0.3";
     			document.getElementById("horizontal-bar").style.opacity = "0.3";
     		}
-			function close_button(){
+    		function close_button(){
 				console.log("clicked");
     			document.getElementById("content-class").style.opacity = "1";
-    			document.getElementById("cover").style.opacity = "1";	
+    			document.getElementById("cover").style.opacity = "1";
 				document.getElementById("login-page").style.display = "none";
 				document.getElementById("horizontal-bar").style.opacity = "1";
 			}

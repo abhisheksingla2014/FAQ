@@ -154,7 +154,7 @@
 
 	}
 	#button-div{
-		height: 50px;	 
+		height: 50px;
 	}
 	#close-button{
 		background-color: white;
@@ -244,7 +244,7 @@
 		height: 300px;
 		width: 260px;
 		top: 50%;
-		left:80%;
+		right:0px;
 		background-color: white;
 	}
 	#subscribe-panel{
@@ -401,8 +401,8 @@
 	.faq-heading{
 		font-size: 42px;
 		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
-		margin-bottom: 30px;
-		margin-top: 10px;
+		padding-bottom: 30px;
+		padding-top: 10px;
 		color: orange;
 	}
 	.content-sub-heading{
@@ -420,8 +420,8 @@
 		color:orange;
 	}
 	.questions{
-		margin-top: 10px;
-		margin-bottom: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		list-style: none;
 	}
 	 .questions:before {
@@ -434,6 +434,172 @@
 	      top: 4px;
 	      color: orange;
 	      font-size: 20px;
+	}
+	#login-page{
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 200;
+		top: 0;
+		left: 0;
+		display: none;
+		/*opacity: 0.4;
+		background-color: black;*/
+	}
+	#login-panel{
+		height: 100%;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		background-color: white;
+		opacity: 1;
+		position: relative;
+
+	}
+	#button-div{
+		height: 50px;
+	}
+	#close-button{
+		background-color: white;
+		border: 0;
+		outline: 0;
+		font-weight: bold;
+		height: 20px;
+		width: 40px;	
+		float: right;	
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	#form-div{
+		position: relative;
+		height: 90%;
+		width: 100%;
+		/*margin-top: 50px;*/
+		/*padding: 10%;*/
+		padding: 8%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+	#login-heading{
+		font-size: 45;
+  		color: orange;
+  		font-family:  Arial, Helvetica, sans-serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 50px;
+  		display: block;
+	}
+	.names{
+		font-size: 25;
+  		color: #525252;
+  		font-family:  Georgia, serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 10px;
+  		display: block;
+	}
+	.name-box{
+		width: 250px;
+		height: 30px;
+		display: block;
+		border-radius: 5px;
+		display: block;
+		outline: 0;
+	}
+	#submit-button{
+		height: 40;
+		width: 150;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	cursor: pointer;
+    	outline:0;
+		border-radius: 5px;
+		margin-top: 30px;
+	}
+	#subscribe-button{
+		position: absolute;
+		right: 100%;
+		top: 0;
+		height: 30px;
+		width: 30px;
+		border: 0;
+		outline: 0;
+		background-color: black;
+		color: white;
+	}
+	.subscribe-div{
+		position: fixed;
+		height: 300px;
+		width: 270px;
+		top: 50%;
+		left:100%;
+		background-color: white;
+	}
+	.subscribe-div-click{
+		position: fixed;
+		height: 300px;
+		width: 260px;
+		top: 50%;
+		right:0px;
+		background-color: white;
+	}
+	#subscribe-panel{
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	#subscribe-heading{
+		font-size: 20px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	#subscribe-form{
+		margin-left: 5%;
+		margin-right: 5%;
+		display: block;
+	}
+	#subscribe-input{
+		border: 0;
+   		border-radius: 0;
+    	padding-left: 0;
+    	border-bottom: 1px #e2e3e6 solid;
+    	font-size: 15px;
+    	margin-bottom: 5px;
+    	box-shadow: none;
+    	display: block;
+    	width: 90%;
+    	height: 34px;
+    	padding: 6px 12px;
+        color: #555;
+    	background-color: #fff;
+    	outline: 0;
+	}
+	#subscribe-submit{
+		display: block;
+		background: #ff992b;
+    	color: #fff;
+    	text-shadow: 1px 1px 1px #c96800;
+    	border: 0;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	cursor: pointer;
+    	transition-property: background;
+    	transition-duration: .3s;
+    	width: 80%;
+    	margin-top: 20px;
+    	height: 40px;
+    	font-size: 20;
+    	border-radius: 10px;
+    	margin-left: 10px;
 	}
 }
 
@@ -537,8 +703,8 @@
 	.faq-heading{
 		font-size: 42px;
 		font-family: Roboto,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,sans-serif;
-		margin-bottom: 30px;
-		margin-top: 10px;
+		padding-bottom: 30px;
+		padding-top: 10px;
 		color: orange;
 	}
 	.content-sub-heading{
@@ -570,6 +736,172 @@
 	      top: 4px;
 	      color: orange;
 	      font-size: 20px;
+	}
+	#login-page{
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 200;
+		top: 0;
+		left: 0;
+		display: none;
+		/*opacity: 0.4;
+		background-color: black;*/
+	}
+	#login-panel{
+		height: 100%;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		background-color: white;
+		opacity: 1;
+		position: relative;
+
+	}
+	#button-div{
+		height: 50px;
+	}
+	#close-button{
+		background-color: white;
+		border: 0;
+		outline: 0;
+		font-weight: bold;
+		height: 20px;
+		width: 40px;	
+		float: right;	
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	#form-div{
+		position: relative;
+		height: 90%;
+		width: 100%;
+		/*margin-top: 50px;*/
+		/*padding: 10%;*/
+		padding: 8%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+	#login-heading{
+		font-size: 45;
+  		color: orange;
+  		font-family:  Arial, Helvetica, sans-serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 50px;
+  		display: block;
+	}
+	.names{
+		font-size: 25;
+  		color: #525252;
+  		font-family:  Georgia, serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 10px;
+  		display: block;
+	}
+	.name-box{
+		width: 250px;
+		height: 30px;
+		display: block;
+		border-radius: 5px;
+		display: block;
+		outline: 0;
+	}
+	#submit-button{
+		height: 40;
+		width: 150;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	cursor: pointer;
+    	outline:0;
+		border-radius: 5px;
+		margin-top: 30px;
+	}
+	#subscribe-button{
+		position: absolute;
+		right: 100%;
+		top: 0;
+		height: 30px;
+		width: 30px;
+		border: 0;
+		outline: 0;
+		background-color: black;
+		color: white;
+	}
+	.subscribe-div{
+		position: fixed;
+		height: 300px;
+		width: 270px;
+		top: 50%;
+		left:100%;
+		background-color: white;
+	}
+	.subscribe-div-click{
+		position: fixed;
+		height: 300px;
+		width: 260px;
+		top: 50%;
+		right:0px;
+		background-color: white;
+	}
+	#subscribe-panel{
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	#subscribe-heading{
+		font-size: 20px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	#subscribe-form{
+		margin-left: 5%;
+		margin-right: 5%;
+		display: block;
+	}
+	#subscribe-input{
+		border: 0;
+   		border-radius: 0;
+    	padding-left: 0;
+    	border-bottom: 1px #e2e3e6 solid;
+    	font-size: 15px;
+    	margin-bottom: 5px;
+    	box-shadow: none;
+    	display: block;
+    	width: 90%;
+    	height: 34px;
+    	padding: 6px 12px;
+        color: #555;
+    	background-color: #fff;
+    	outline: 0;
+	}
+	#subscribe-submit{
+		display: block;
+		background: #ff992b;
+    	color: #fff;
+    	text-shadow: 1px 1px 1px #c96800;
+    	border: 0;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	cursor: pointer;
+    	transition-property: background;
+    	transition-duration: .3s;
+    	width: 80%;
+    	margin-top: 20px;
+    	height: 40px;
+    	font-size: 20;
+    	border-radius: 10px;
+    	margin-left: 10px;
 	}
 }
 
@@ -708,5 +1040,177 @@
 	      top: 4px;
 	      color: orange;
 	      font-size: 20px;
+	}
+	#login-page{
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		z-index: 200;
+		top: 0;
+		left: 0;
+		display: none;
+		/*opacity: 0.4;
+		background-color: black;*/
+	}
+	#login-panel{
+		height: 100%;
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+		background-color: white;
+		opacity: 1;
+		position: relative;
+
+	}
+	#button-div{
+		height: 50px;
+	}
+	#close-button{
+		background-color: white;
+		border: 0;
+		outline: 0;
+		font-weight: bold;
+		height: 20px;
+		width: 40px;	
+		float: right;	
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+	#form-div{
+		position: relative;
+		height: 90%;
+		width: 100%;
+		/*margin-top: 50px;*/
+		/*padding: 10%;*/
+		padding: 8%;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+	}
+	#login-heading{
+		font-size: 45;
+  		color: orange;
+  		font-family:  Arial, Helvetica, sans-serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 50px;
+  		display: block;
+	}
+	.names{
+		font-size: 20;
+  		color: #525252;
+  		font-family:  Georgia, serif;
+  		text-align: center;
+  		margin-top: 10px;
+  		margin-bottom: 10px;
+  		display: block;
+	}
+	.name-box{
+		width: 150px;
+		height: 24px;
+		display: block;
+		/*border-radius: 5px;*/
+		display: block;
+		border: 0;
+		border-bottom: 1px solid;
+		outline: 0;
+	}
+	#submit-button{
+		height: 40;
+		width: 150;
+		background-color: orange;
+    	border: none;
+    	color: white;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	cursor: pointer;
+    	outline:0;
+		border-radius: 5px;
+		margin-top: 30px;
+	}
+	#subscribe-button{
+		display: none;
+		position: absolute;
+		right: 100%;
+		top: 0;
+		height: 30px;
+		width: 30px;
+		border: 0;
+		outline: 0;
+		background-color: black;
+		color: white;
+	}
+	.subscribe-div{
+		padding-top: 10px;
+		position: relative;
+		display: block;
+		height: 270px;
+		width: 100%;
+		/*top: 50%;*/
+		/*left:100%;*/
+		background-color: white;
+	}
+	.subscribe-div-click{
+		position: relative;
+		display: block;
+		height: 300px;
+		width: 100%;
+		/*top: 50%;*/
+		/*right:0px;*/
+		background-color: white;
+	}
+	#subscribe-panel{
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	#subscribe-heading{
+		font-size: 20px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		display: block;
+	}
+	#subscribe-form{
+		margin-left: 5%;
+		margin-right: 5%;
+		display: block;
+	}
+	#subscribe-input{
+		border: 0;
+   		border-radius: 0;
+    	padding-left: 0;
+    	border-bottom: 1px #e2e3e6 solid;
+    	font-size: 15px;
+    	margin-bottom: 5px;
+    	box-shadow: none;
+    	display: block;
+    	width: 90%;
+    	height: 34px;
+    	padding: 6px 12px;
+        color: #555;
+    	background-color: #fff;
+    	outline: 0;
+	}
+	#subscribe-submit{
+		display: block;
+		background: #ff992b;
+    	color: #fff;
+    	text-shadow: 1px 1px 1px #c96800;
+    	border: 0;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	cursor: pointer;
+    	transition-property: background;
+    	transition-duration: .3s;
+    	width: 80%;
+    	margin-top: 20px;
+    	height: 40px;
+    	font-size: 20;
+    	border-radius: 10px;
+    	margin-left: 10px;
 	}
 }
